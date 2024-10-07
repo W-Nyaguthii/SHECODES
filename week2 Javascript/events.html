@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheCodes Application</title>
+</head>
+<body>
+  <h1>Ready to join SheCodes?</h1>
+  <button id="applyButton">Apply Now</button>
+  <h1 id="message"></h1> 
+  <script>
+    let applyButton = document.getElementById("applyButton");
+let messageElement = document.getElementById("message");
+
+applyButton.addEventListener("click", function() {
+  let firstName = prompt("What is your first name?");
+  let age = parseInt(prompt("How old are you?"));
+
+  if (age >= 18) {
+    messageElement.textContent = `Hi, ${firstName}! Welcome to SheCodes!`;
+  } else {
+    messageElement.textContent = `Sorry, ${firstName}! You cannot join SheCodes yet.`;
+  }
+});
+
+  </script>
+</body>
+</html>
