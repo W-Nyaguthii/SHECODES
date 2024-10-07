@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SheCodes Plus Functions</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <h1>SheCodes Plus / Selectors</h1>
+    <div id="app"></div>
+
+    <ul>
+      <li class="country">France 🇫🇷</li>
+      <li class="country">USA 🇺🇸</li>
+      <li class="country" id="special">Portugal 🇵🇹</li>
+    </ul>
+
+    <script>
+        // Challenge 1
+// Log li with id special
+
+// Challenge 2
+// Log all li with class of country
+
+// Challenge 3
+// Add class special to the li with id special
+
+// Challenge 4
+// In your code, replace the content of the element with id special
+// by your favorite country (other than Portugal of course)
+
+// Challenge 1: Log the LI with ID special
+const specialLi = document.getElementById("special");
+console.log(specialLi);
+
+// Challenge 2: Log all LI elements with the class country
+const countryLis = document.querySelectorAll(".country");
+console.log(countryLis);
+
+// Challenge 3: Add the class special to the LI with ID special
+specialLi.classList.add("special");
+
+// Challenge 4: Replace the content of the element with ID special with your favorite country
+specialLi.textContent = "Kenya 🇰🇪";
+
+    </script>
+  </body>
+</html>
