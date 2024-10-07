@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project</title>
+      <style>
+     .project {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%);
+        box-shadow: none;
+      }
+
+     h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #be1455ef;
+      }
+
+      h2 {
+        text-align: center;
+        padding: 8px;
+        font-size: 18px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-family: 'Times New Roman';
+        margin: 20px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #be1455;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      </style>
+    </head>
+  <body>
+      <div class="project">
+        <h1>I Like Cupcakes!</h1>
+        <h2>Especially strawberry cupcakes🧁.</h2>
+        <hr> 
+
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/687/original/Strawberry_Cupcakes_-_In_Bloom_Bakery.jpeg?1721117624" 
+        alt="Strawberry cupcakes🧁" width="200" height="200"/>
+        <p>
+           <strong> I like strawberry cupcakes </strong>because when baked right they are often fluffy,moist and will melt in your mouth!
+            They can be easily made from scratch, filled with fresh strawberries and topped with a beautiful pink strawberry frosting.
+            These cupcakes are bursting with strawberry flavor and are perfect for any occasion.
+            If you're interested in learning how to make them, you can visit the link attached below.
+        </p>
+        
+        <a href="https://preppykitchen.com/strawberry-cupcakes/">
+            <em>Learn here😊</em> </a>
+        
+            <p style="text-align: center; font-size: 20px;">Do you also like cupcakes?</p> 
+             <span>
+               <button class="cupcake"> Click Here!</button>
+            </span>
+      </div>
+        
+      <script>
+        let buyButton = document.querySelector(".cupcake");
+        buyButton.addEventListener("click", function()
+         {
+          let name = prompt("What is your name?");
+      
+          if (prompt("Do you like cupcakes?").toLowerCase() === "yes") {
+            alert("Great! Me too!");
+          } else {
+            alert("That's okay, more cupcakes for me!");
+          }
+          let emoji = prompt("What is your favorite emoji?");
+          alert(
+            "Thank you, " + name +
+              " for sharing my love for cupcakes--" +
+              emoji
+          );
+        });
+      </script>
+  </body>
+</html>
